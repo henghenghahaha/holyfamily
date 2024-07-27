@@ -66,8 +66,8 @@ async function onSubmit(event: FormSubmitEvent<Schema>) {
     <ULandingSection class="!pt-5">
       <div class="container1">
         <img class="image1"
-             src="https://4habe7.p3cdn1.secureserver.net/wp-content/uploads/2023/08/Campus-Exterior_05_1200X500.jpg"
-             alt="Cardinal Stritch University">
+             src="/campus.jpg"
+             alt="Holy Family College">
         <UForm class="overlay" :schema="schema" :state="state" @submit="onSubmit">
           <h1>Check your degree here</h1>
           <UFormGroup label="Name" name="name"

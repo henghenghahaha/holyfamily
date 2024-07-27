@@ -8,49 +8,29 @@ const page = {
   },
   "sections": [
     {
-      "title": "GREAT HALL",
-      "description": "The Great Hall at Stritch University stands as a testament to the institution's " +
-        "commitment to fostering a vibrant and inclusive community. This grand and elegant space, " +
-        "with its high vaulted ceilings and stunning architectural details, serves as the heart of " +
-        "the university's social and academic life. The hall is adorned with beautiful chandeliers " +
-        "that cast a warm, inviting glow over the polished wooden floors and intricately designed walls.",
+      "title": "Library",
+      "description": "The Holyfamily College Library is a vibrant hub of knowledge and learning. With its extensive collection of books, digital resources, and quiet study spaces, it caters to diverse academic needs. The library offers modern technology, expert librarians, and collaborative areas, fostering an environment of intellectual growth and research excellence. It stands as a cornerstone of the college's commitment to academic success and lifelong learning.",
       "id": "features",
-      "img": "/greathall.png",
+      "img": "/Library.png",
       "align": "left"
     },
     {
-      "title": "BONAVENTURE HALL",
-      "description": "Bonaventure Hall is a cornerstone of Stritch University, embodying the spirit of academic " +
-        "excellence and community engagement. As one of the primary buildings on campus, Bonaventure " +
-        "Hall serves as a central hub for a variety of academic and administrative functions, playing " +
-        "a crucial role in the daily life of our students, faculty, and staff.",
+      "title": "Music Center",
+      "description": "The Music Center at Holyfamily College is a vibrant hub of artistic expression and musical education. Featuring state-of-the-art practice rooms, performance halls, and recording studios, it nurtures talent across various genres. With dedicated faculty and diverse programs, students explore composition, performance, and music technology. The center hosts regular concerts, workshops, and collaborations, fostering a dynamic community of musicians and music lovers.",
       "align": "right",
-      "img": "/BONAVENTUREHALL.png"
+      "img": "music_centre.png"
     },
     {
-      "title": "LIBRARY",
-      "description": "Welcome to the Stritch University Library, a vibrant hub of learning and research at the heart " +
-        "of our campus. Our library is dedicated to providing a welcoming and resource-rich environment " +
-        "that supports the academic and personal growth of our students, faculty, and staff.",
+      "title": "Student Dormitories",
+      "description": "Holy Family College's Student Dormitories offer a welcoming home away from home for our diverse student body. These modern residences blend comfort with community, featuring well-equipped rooms, study areas, and common spaces that foster friendship and academic growth. With 24/7 security, on-site amenities, and a supportive residential life program, our dorms provide the ideal environment for students to thrive both personally and academically.",
       "align": "left",
-      "img": "/LIBRARY.png"
+      "img": "/student_dormitories.png"
     },
     {
-      "title": "CAMPUS CENTER",
-      "description": "The Campus Center at Stritch University serves as the heart of student life and a central hub " +
-        "for the university community. This vibrant space is designed to foster a sense of belonging and " +
-        "engagement among students, faculty, and staff.",
+      "title": "Dining Hall",
+      "description": "Holy Family College's Dining Hall is a vibrant hub of community and culinary delight. This spacious, modern facility offers a diverse array of fresh, nutritious meals catering to various dietary needs. With its warm ambiance, students and faculty gather to enjoy delicious food, engage in lively conversations, and forge lasting friendships. The hall's commitment to sustainability and locally-sourced ingredients reflects the college's values of responsible stewardship.",
       "align": "right",
-      "img": "/CAMPUSCENTER.png"
-    },
-    {
-      "title": "CONFERENCE CENTER",
-      "description": "The Stritch University Conference Center is a premier venue designed to host a wide range of " +
-        "events, from academic conferences and corporate meetings to social gatherings and workshops. " +
-        "Nestled within the picturesque campus of Stritch University, the center offers state-of-the-art " +
-        "facilities, exceptional services, and a serene environment conducive to productive and memorable events.",
-      "align": "left",
-      "img": "/CONFERENCECENTER.png"
+      "img": "/dining.png"
     }
   ]
 }
@@ -62,8 +42,7 @@ const page = {
       :title="page.hero.title"
       :ui="{title: 'text-3xl font-serif font-semibold tracking-tight text-gray-900 dark:text-white sm:text-7xl'}"
     >
-      <div
-        class="absolute inset-0 landing-grid z-[-1] [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"/>
+      <div class="absolute inset-0 landing-grid z-[-1] [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"/>
 
     </ULandingHero>
 
@@ -79,13 +58,13 @@ const page = {
       :align="section.align"
     >
       <div class="container">
-        <img class="image" :src=section.img alt="Cardinal Stritch University">
+        <img class="image" :src=section.img alt="Holy Family College">
       </div>
     </ULandingSection>
 
     <ULandingSection>
       <div class="container1">
-        <img class="image1" src="/Faith_08_1200X500-1536x640.jpg" alt="Cardinal Stritch University">
+        <img class="image1" src="/Class.jpg" alt="Holy Family College">
       </div>
     </ULandingSection>
   </div>
@@ -136,7 +115,6 @@ const page = {
 
 .image1 {
   width: 100%;
-  height: auto;
   margin-bottom: 20px;
   border-radius: 10px;
 }
