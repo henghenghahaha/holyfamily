@@ -84,6 +84,7 @@ const page = {
 
 .imageplaceholder {
   width: 1920px;
+  //height: 80%;
 }
 
 .container {
