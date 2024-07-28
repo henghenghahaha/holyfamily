@@ -38,17 +38,15 @@ const page = {
 
 <template>
   <div v-if="page">
-    <ULandingHero
-      :title="page.hero.title"
-      :ui="{title: 'text-3xl font-serif font-semibold tracking-tight text-gray-900 dark:text-white sm:text-7xl'}"
-    >
-      <div class="absolute inset-0 landing-grid z-[-1] [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"/>
+<!--    <ULandingHero-->
+<!--      :ui="{title: 'text-3xl font-serif font-semibold tracking-tight text-gray-900 dark:text-white sm:text-7xl'}"-->
+<!--    >-->
 
-    </ULandingHero>
-
-    <ULandingSection class="!pt-0">
-      <ImagePlaceholder/>
-    </ULandingSection>
+<!--    </ULandingHero>-->
+    <img class="imageplaceholder" src="/campus_placeholder.jpg" />
+<!--    <ULandingSection class="!pt-0">-->
+<!--      <ImagePlaceholder/>-->
+<!--    </ULandingSection>-->
 
     <ULandingSection
       v-for="(section, index) in page.sections"
@@ -62,11 +60,11 @@ const page = {
       </div>
     </ULandingSection>
 
-    <ULandingSection>
-      <div class="container1">
-        <img class="image1" src="/Class.jpg" alt="Holy Family College">
-      </div>
-    </ULandingSection>
+<!--    <ULandingSection>-->
+<!--      <div class="container1">-->
+<!--        <img class="image1" src="/Class.jpg" alt="Holy Family College">-->
+<!--      </div>-->
+<!--    </ULandingSection>-->
   </div>
 </template>
 
@@ -82,6 +80,10 @@ const page = {
     background-image: linear-gradient(to right, rgb(var(--color-gray-800)) 1px, transparent 1px),
     linear-gradient(to bottom, rgb(var(--color-gray-800)) 1px, transparent 1px);
   }
+}
+
+.imageplaceholder {
+  width: 1920px;
 }
 
 .container {
