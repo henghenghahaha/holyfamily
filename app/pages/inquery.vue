@@ -62,48 +62,53 @@ async function onSubmit(event: FormSubmitEvent<Schema>) {
 </script>
 
 <template>
-  <UPage>
-    <ULandingSection class="!pt-5">
-      <div class="container1">
-        <img class="image1"
-             src="/campus.jpg"
-             alt="Holy Family College">
-        <UForm class="overlay" :schema="schema" :state="state" @submit="onSubmit">
-          <h1>Check your degree here</h1>
-          <UFormGroup label="Name" name="name"
-                      :ui="{label: {
+  <div>
+    <div class="container1 mx-auto">
+      <img class="image1"
+           src="/campus.jpg"
+           alt="Holy Family College">
+      <UForm class="overlay" :schema="schema" :state="state" @submit="onSubmit">
+        <h1>Check your degree here</h1>
+        <UFormGroup label="Name" name="name"
+                    :ui="{label: {
             wrapper: 'flex content-center items-center justify-between',
             base: 'block font-medium text-white dark:text-white-200',
             required: 'after:content-['*'] after:ms-0.5 after:text-red-500 dark:after:text-red-400',
           }}">
-            <UInput type="text" v-model="state.name" placeholder="Enter your name" style="width: 20rem"/>
-          </UFormGroup>
-          <UFormGroup label="ID" name="id" :ui="{label: {
+          <UInput type="text" v-model="state.name" placeholder="Enter your name" style="width: 20rem"/>
+        </UFormGroup>
+        <UFormGroup label="ID" name="id" :ui="{label: {
             wrapper: 'flex content-center items-center justify-between',
             base: 'block font-medium text-white dark:text-white-200',
             required: 'after:content-['*'] after:ms-0.5 after:text-red-500 dark:after:text-red-400',
           }}">
-            <UInput type="text" v-model="state.id" placeholder="Enter your ID" style="width: 20rem" />
-          </UFormGroup>
-          <UFormGroup>
-            <UButton type="submit">Inquery</UButton>
-          </UFormGroup>
-        </UForm>
-      </div>
-    </ULandingSection>
+          <UInput type="text" v-model="state.id" placeholder="Enter your ID" style="width: 20rem" />
+        </UFormGroup>
+        <UFormGroup>
+          <UButton type="submit">Inquery</UButton>
+        </UFormGroup>
+      </UForm>
 
-  </UPage>
+    </div>
+    <img class="image2" src="/location.png">
+  </div>
 </template>
 
 <style>
 .container1 {
   position: relative;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1920px;
   height: 500px;
 }
 
 .image1 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.image2 {
   width: 100%;
   height: 100%;
   object-fit: cover;
