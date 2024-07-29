@@ -39,6 +39,21 @@ const links = [{
                 official@holyfamilycollege.org
               </p>
             </UFormGroup>
+            <div style="height: 20px">
+            </div>
+            <UFormGroup
+              label="Our Location👇"
+              :ui="{
+              container: 'mt-3',
+              label: {
+                  base: 'block font-bold text-white dark:text-white'},
+            }"
+            >
+              <p class="contactemail border rounded-3xl w-60 p-2 text-white pl-2 pr-1">
+                Manitowoc, Wisconsin, U.S. 44.0711°N 87.7443°W
+              </p>
+            </UFormGroup>
+
           </form>
         </template>
       </UFooterColumns>
