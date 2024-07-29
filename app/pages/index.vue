@@ -38,16 +38,25 @@ const page = {
 
 <template>
   <div v-if="page">
-<!--    <ULandingHero-->
-<!--      :ui="{title: 'text-3xl font-serif font-semibold tracking-tight text-gray-900 dark:text-white sm:text-7xl'}"-->
-<!--    >-->
-
-<!--    </ULandingHero>-->
     <img class="imageplaceholder" src="/campus_placeholder.jpg" />
-<!--    <ULandingSection class="!pt-0">-->
-<!--      <ImagePlaceholder/>-->
-<!--    </ULandingSection>-->
-
+    <div class="container2">
+      <div class="stat-item">
+        <div class="stat-number">3000+</div>
+        <div class="stat-label">Global Students</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">100+</div>
+        <div class="stat-label">Professional Course</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">1976</div>
+        <div class="stat-label">Establishment Time</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">500+</div>
+        <div class="stat-label">Teachers</div>
+      </div>
+    </div>
     <ULandingSection
       v-for="(section, index) in page.sections"
       :key="index"
@@ -60,31 +69,13 @@ const page = {
       </div>
     </ULandingSection>
 
-<!--    <ULandingSection>-->
-<!--      <div class="container1">-->
-<!--        <img class="image1" src="/Class.jpg" alt="Holy Family College">-->
-<!--      </div>-->
-<!--    </ULandingSection>-->
   </div>
 </template>
 
 <style scoped>
-.landing-grid {
-  background-size: 100px 100px;
-  background-image: linear-gradient(to right, rgb(var(--color-gray-200)) 1px, transparent 1px),
-  linear-gradient(to bottom, rgb(var(--color-gray-200)) 1px, transparent 1px);
-}
-
-.dark {
-  .landing-grid {
-    background-image: linear-gradient(to right, rgb(var(--color-gray-800)) 1px, transparent 1px),
-    linear-gradient(to bottom, rgb(var(--color-gray-800)) 1px, transparent 1px);
-  }
-}
 
 .imageplaceholder {
   width: 1920px;
-  //height: 80%;
 }
 
 .container {
@@ -105,21 +96,42 @@ const page = {
   border-radius: 10px;
 }
 
-.container1 {
-  background-color: white;
-  border: 1px solid #ccc;
-  border-radius: 10px;
+.container2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  max-width: 1900px;
   padding: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  max-width: 1200px;
-  position: relative;
+  height: 200px;
+  background-color: rgb(20,50,150);
 }
 
-.image1 {
-  width: 100%;
-  margin-bottom: 20px;
-  border-radius: 10px;
+.stat-item {
+  text-align: center;
+  padding: 20px;
+  color: #FFFFFF;
 }
+
+.stat-number {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.stat-label {
+  font-size: 1rem;
+  opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  .container2 {
+    flex-direction: column;
+  }
+  .stat-item {
+    margin-bottom: 30px;
+  }
+}
+
 </style>
 

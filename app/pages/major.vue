@@ -61,9 +61,10 @@ const posts = [
           :title="post.title"
           :description="post.description"
           :image="post.image"
-          :orientation="index === 0 ? 'horizontal' : 'vertical'"
-          :class="[index === 0 && 'col-span-full']"
-          :ui="{description: 'line-clamp-2'}"
+          :ui="{description: 'line-clamp-2',image: {
+    wrapper: 'ring-1 ring-gray-200 dark:ring-gray-800 relative overflow-hidden aspect-[3/4] w-full rounded-lg pointer-events-none',
+    base: 'object-cover object-top w-full h-full transform transition-transform duration-200 group-hover:scale-105'
+  },}"
         />
       </UBlogList>
     </UPageBody>
