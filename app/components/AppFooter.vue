@@ -35,7 +35,7 @@ const links = [{
                   base: 'block font-bold text-white dark:text-white'},
             }"
             >
-              <p class="contactemail border rounded-3xl w-60 p-2 text-white pl-2 pr-1">
+              <p class="contactemail border rounded-3xl w-80 p-2 text-white pl-2 pr-1">
                 communications@holyfamilycollege.org
               </p>
             </UFormGroup>
