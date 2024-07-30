@@ -90,7 +90,7 @@ async function onSubmit(event: FormSubmitEvent<Schema>) {
       </UForm>
 
     </div>
-    <img class="image2" src="/location.png">
+    <img class="image2" src="/location.png" >
   </div>
 </template>
 
