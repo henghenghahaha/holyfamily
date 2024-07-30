@@ -36,7 +36,7 @@ const links = [{
             }"
             >
               <p class="contactemail border rounded-3xl w-60 p-2 text-white pl-2 pr-1">
-                official@holyfamilycollege.org
+                communications@holyfamilycollege.org
               </p>
             </UFormGroup>
             <div style="height: 20px">
