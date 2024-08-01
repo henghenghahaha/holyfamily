@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <img class="imageplaceholder" src="/Library_c.png" />
+  <img class="imageplaceholder" src="/Library_c.png" >
   <div class="div1">
     <h1>Undergraduate major</h1>
     <div class="major-container">
