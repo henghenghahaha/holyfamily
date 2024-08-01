@@ -22,9 +22,9 @@ const page = {
     },
     {
       "title": "Campus Life",
-      "description": "Holy Family College's Student Dormitories offer a welcoming home away from home for our diverse student body. These modern residences blend comfort with community, featuring well-equipped rooms, study areas, and common spaces that foster friendship and academic growth. With 24/7 security, on-site amenities, and a supportive residential life program, our dorms provide the ideal environment for students to thrive both personally and academically.",
+      "description": "Holy Family College offers a vibrant campus experience, blending academic excellence with a close-knit community. Students enjoy a range of activities, from clubs and sports to cultural events. The picturesque campus fosters personal growth and lifelong friendships. With modern facilities, cozy dorms, and a supportive atmosphere, students find a perfect balance between study and social life, creating unforgettable memories throughout their college journey.",
       "align": "right",
-      "img": "/ca"
+      "img": "/campuslife.png"
     }
   ]
 }
@@ -51,6 +51,31 @@ const page = {
         <div class="stat-label">Teachers</div>
       </div>
     </div>
+
+    <div class="flex flex-wrap -mx-2">
+      <div class="w-full sm:w-1/3 px-2 mb-4">
+        <img
+          src=""
+          alt="Image 1"
+          class="w-full h-auto rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"
+        />
+      </div>
+      <div class="w-full sm:w-1/3 px-2 mb-4">
+        <img
+          src="https://via.placeholder.com/400x300"
+          alt="Image 2"
+          class="w-full h-auto rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"
+        />
+      </div>
+      <div class="w-full sm:w-1/3 px-2 mb-4">
+        <img
+          src="https://via.placeholder.com/400x300"
+          alt="Image 3"
+          class="w-full h-auto rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"
+        />
+      </div>
+    </div>
+
     <ULandingSection
       v-for="(section, index) in page.sections"
       :key="index"
