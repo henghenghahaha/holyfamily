@@ -22,14 +22,12 @@ const links = [{
     <template #logo >
       <div style="margin-top: 8px;margin-bottom: 8px" class="flex">
         <img class='headerlogo' src="/favicon.ico" alt="Holy Family College">
-        <p style="margin-top: 36px;margin-left: 3px;font-size: 23px;  font-family: 'Times New Roman', Times, serif;font-weight: bold">Holy Family College</p>
+        <p style="margin-top: 36px;margin-left: 3px;font-size: 30px;  font-family: 'Times New Roman', Times, serif;font-weight: bold">Holy Family College</p>
       </div>
     </template>
 
     <template #right>
-      <UHeaderLinks
-      :links = "links"
-      />
+      <UHeaderLinks :links = "links" :ui="{base: 'text-lg/6 font-semibold flex items-center gap-1',}"/>
     </template>
 
   </UHeader>

@@ -3,6 +3,7 @@
 </script>
 
 <template>
+  <img class="imageplaceholder" src="/Library_c.png" />
   <div class="div1">
     <h1>Undergraduate major</h1>
     <div class="major-container">
@@ -212,6 +213,9 @@
 </template>
 
 <style>
+.imageplaceholder {
+  width: 1920px;
+}
 .div1 {
   font-family: Arial, sans-serif;
   line-height: 1.6;

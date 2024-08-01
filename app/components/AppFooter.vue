@@ -35,7 +35,7 @@ const links = [{
                   base: 'block font-bold text-white dark:text-white'},
             }"
             >
-              <p class="contactemail border rounded-3xl w-80 p-2 text-white pl-2 pr-1">
+              <p class="contactemail  w-80 p-2 text-white pl-2 pr-1 underline decoration-1 underline-offset-1">
                 communications@holyfamilycollege.org
               </p>
             </UFormGroup>
@@ -49,8 +49,8 @@ const links = [{
                   base: 'block font-bold text-white dark:text-white'},
             }"
             >
-              <p class="contactemail border rounded-3xl w-60 p-2 text-white pl-2 pr-1">
-                Manitowoc, Wisconsin, U.S. 44.0711°N 87.7443°W
+              <p class="contactemail  w-80 p-2 text-white pl-2 pr-1 underline decoration-1 underline-offset-1">
+                2404 Silveridge Dr, Manitowoc, WI 54220
               </p>
             </UFormGroup>
 

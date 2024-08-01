@@ -8,17 +8,17 @@ const page = {
   },
   "sections": [
     {
+      "title": "Music Center",
+      "description": "The Music Center at Holyfamily College is a vibrant hub of artistic expression and musical education. Featuring state-of-the-art practice rooms, performance halls, and recording studios, it nurtures talent across various genres. With dedicated faculty and diverse programs, students explore composition, performance, and music technology. The center hosts regular concerts, workshops, and collaborations, fostering a dynamic community of musicians and music lovers.",
+      "align": "right",
+      "img": "music_centre.png"
+    },
+    {
       "title": "Library",
       "description": "The Holyfamily College Library is a vibrant hub of knowledge and learning. With its extensive collection of books, digital resources, and quiet study spaces, it caters to diverse academic needs. The library offers modern technology, expert librarians, and collaborative areas, fostering an environment of intellectual growth and research excellence. It stands as a cornerstone of the college's commitment to academic success and lifelong learning.",
       "id": "features",
       "img": "/Library.png",
       "align": "left"
-    },
-    {
-      "title": "Music Center",
-      "description": "The Music Center at Holyfamily College is a vibrant hub of artistic expression and musical education. Featuring state-of-the-art practice rooms, performance halls, and recording studios, it nurtures talent across various genres. With dedicated faculty and diverse programs, students explore composition, performance, and music technology. The center hosts regular concerts, workshops, and collaborations, fostering a dynamic community of musicians and music lovers.",
-      "align": "right",
-      "img": "music_centre.png"
     },
     {
       "title": "Student Dormitories",
@@ -41,19 +41,19 @@ const page = {
     <img class="imageplaceholder" src="/campus_placeholder.jpg" />
     <div class="container2">
       <div class="stat-item">
-        <div class="stat-number">3000+</div>
-        <div class="stat-label">Global Students</div>
+        <div class="stat-number">1885</div>
+        <div class="stat-label">Establishment</div>
       </div>
       <div class="stat-item">
         <div class="stat-number">100+</div>
-        <div class="stat-label">Professional Course</div>
+        <div class="stat-label">Academic programmes</div>
       </div>
       <div class="stat-item">
-        <div class="stat-number">1976</div>
-        <div class="stat-label">Establishment Time</div>
+        <div class="stat-number">4000+</div>
+        <div class="stat-label">Global Students</div>
       </div>
       <div class="stat-item">
-        <div class="stat-number">500+</div>
+        <div class="stat-number">300+</div>
         <div class="stat-label">Teachers</div>
       </div>
     </div>
@@ -63,6 +63,7 @@ const page = {
       :title="section.title"
       :description="section.description"
       :align="section.align"
+      :ui="{wrapper: 'py-8 sm:py-8'}"
     >
       <div class="container">
         <img class="image" :src=section.img alt="Holy Family College">
@@ -79,11 +80,8 @@ const page = {
 }
 
 .container {
-  background-color: white;
-  border: 1px solid #ccc;
   border-radius: 10px;
   padding: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-align: center;
   max-width: 600px;
   position: relative;
@@ -104,6 +102,7 @@ const page = {
   max-width: 1900px;
   padding: 20px;
   height: 200px;
+  margin-top: 50px;
   background-color: rgb(20,50,150);
 }
 
