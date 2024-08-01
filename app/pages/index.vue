@@ -52,29 +52,29 @@ const page = {
       </div>
     </div>
 
-    <div class="flex flex-wrap -mx-2">
-      <div class="w-full sm:w-1/3 px-2 mb-4">
-        <img
-          src=""
-          alt="Image 1"
-          class="w-full h-auto rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"
-        />
-      </div>
-      <div class="w-full sm:w-1/3 px-2 mb-4">
-        <img
-          src=""
-          alt="Image 2"
-          class="w-full h-auto rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"
-        />
-      </div>
-      <div class="w-full sm:w-1/3 px-2 mb-4">
-        <img
-          src=""
-          alt="Image 3"
-          class="w-full h-auto rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"
-        />
-      </div>
-    </div>
+<!--    <div class="flex flex-wrap -mx-2">-->
+<!--      <div class="w-full sm:w-1/3 px-2 mb-4">-->
+<!--        <img-->
+<!--          src=""-->
+<!--          alt="Image 1"-->
+<!--          class="w-full h-auto rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"-->
+<!--        />-->
+<!--      </div>-->
+<!--      <div class="w-full sm:w-1/3 px-2 mb-4">-->
+<!--        <img-->
+<!--          src=""-->
+<!--          alt="Image 2"-->
+<!--          class="w-full h-auto rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"-->
+<!--        />-->
+<!--      </div>-->
+<!--      <div class="w-full sm:w-1/3 px-2 mb-4">-->
+<!--        <img-->
+<!--          src=""-->
+<!--          alt="Image 3"-->
+<!--          class="w-full h-auto rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"-->
+<!--        />-->
+<!--      </div>-->
+<!--    </div>-->
 
     <ULandingSection
       v-for="(section, index) in page.sections"
