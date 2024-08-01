@@ -21,16 +21,10 @@ const page = {
       "align": "left"
     },
     {
-      "title": "Student Dormitories",
+      "title": "Campus Life",
       "description": "Holy Family College's Student Dormitories offer a welcoming home away from home for our diverse student body. These modern residences blend comfort with community, featuring well-equipped rooms, study areas, and common spaces that foster friendship and academic growth. With 24/7 security, on-site amenities, and a supportive residential life program, our dorms provide the ideal environment for students to thrive both personally and academically.",
-      "align": "left",
-      "img": "/student_dormitories.png"
-    },
-    {
-      "title": "Dining Hall",
-      "description": "Holy Family College's Dining Hall is a vibrant hub of community and culinary delight. This spacious, modern facility offers a diverse array of fresh, nutritious meals catering to various dietary needs. With its warm ambiance, students and faculty gather to enjoy delicious food, engage in lively conversations, and forge lasting friendships. The hall's commitment to sustainability and locally-sourced ingredients reflects the college's values of responsible stewardship.",
       "align": "right",
-      "img": "/dining.png"
+      "img": "/ca"
     }
   ]
 }

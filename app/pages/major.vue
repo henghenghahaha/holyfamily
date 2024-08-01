@@ -47,12 +47,8 @@ const posts = [
 </script>
 
 <template>
+  <img class="imageplaceholder" src="/Library_c.png" >
   <UContainer>
-    <UPageHeader
-      v-bind="page"
-      class="py-[50px]"
-    />
-
     <UPageBody>
       <UBlogList>
         <UBlogPost
