@@ -62,7 +62,7 @@ h1 {
 
 .text-block {
   width: 100%;
-  max-width: 800px;
+  max-width: 1300px;
   margin-bottom: 40px;
 
 }
@@ -85,7 +85,7 @@ h1 {
 }
 
 .image-divider {
-  width: 100%;
+  width: 1920px;
   height: 300px;
   overflow: hidden;
   margin-bottom: 40px;
@@ -98,9 +98,7 @@ h1 {
 }
 
 @media (max-width: 768px) {
-  .hero-image {
-    height: 200px;
-  }
+
 
   .image-divider {
     height: 200px;
