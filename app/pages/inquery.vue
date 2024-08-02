@@ -135,8 +135,7 @@ async function onSubmit(event: FormSubmitEvent<Schema>) {
 }
 
 .overlay input[type="text"] {
-  width: 80%;
-  max-width: 400px;
+  max-width: 600px;
   padding: 10px;
   margin: 10px 0;
   border: none;
