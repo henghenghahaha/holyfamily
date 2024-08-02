@@ -47,7 +47,7 @@ const posts = [
 </script>
 
 <template>
-  <img class="imageplaceholder" src="/Library_c.png" >
+  <img class="imageplaceholder" src="/Library_i.png" >
   <UContainer>
     <UPageBody>
       <UBlogList>

@@ -44,12 +44,12 @@ const page = {
         <div class="stat-label">Academic programmes</div>
       </div>
       <div class="stat-item">
-        <div class="stat-number">4000+</div>
-        <div class="stat-label">Global Students</div>
-      </div>
-      <div class="stat-item">
         <div class="stat-number">300+</div>
         <div class="stat-label">Teachers</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">4000+</div>
+        <div class="stat-label">Global Students</div>
       </div>
     </div>
 
@@ -122,7 +122,6 @@ const page = {
   max-width: 1900px;
   padding: 20px;
   height: 200px;
-  margin-top: 50px;
   background-color: rgb(20,50,150);
 }
 
