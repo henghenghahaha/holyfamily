@@ -65,7 +65,7 @@ async function onSubmit(event: FormSubmitEvent<Schema>) {
   <div>
     <div class="container1 mx-auto">
       <img class="image1"
-           src="/campus.jpg"
+           src="/combine.png"
            alt="Holy Family College">
       <UForm class="overlay" :schema="schema" :state="state" @submit="onSubmit">
         <h1>Check your degree here</h1>
@@ -90,7 +90,7 @@ async function onSubmit(event: FormSubmitEvent<Schema>) {
       </UForm>
 
     </div>
-    <img class="image2" src="/location.png" >
+<!--    <img class="image2" src="/location.png" >-->
   </div>
 </template>
 
@@ -115,12 +115,12 @@ async function onSubmit(event: FormSubmitEvent<Schema>) {
 }
 
 .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
+  position: relative;
+  top: -400px;
+  left: -400px;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0);
   display: flex;
   flex-direction: column;
   justify-content: center;
