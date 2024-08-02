@@ -53,22 +53,22 @@ const page = {
       </div>
     </div>
 
-    <div class="flex flex-wrap -mx-2">
+    <div class="flex flex-wrap mx-2 mt-5">
       <div class="w-full sm:w-1/3 px-2 mb-4">
         <img
-          src=""
+          src="/campus1.png"
           class="w-full h-auto rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"
         />
       </div>
       <div class="w-full sm:w-1/3 px-2 mb-4">
         <img
-          src=""
+          src="/campus2.png"
           class="w-full h-auto rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"
         />
       </div>
       <div class="w-full sm:w-1/3 px-2 mb-4">
         <img
-          src=""
+          src="/campus3.jpg"
           class="w-full h-auto rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"
         />
       </div>

@@ -11,9 +11,12 @@ const links = [{
     label: 'Course Catalogs',
     to: '/course'
   }, {
+    label: 'About Us',
+    to: '/aboutus'
+  }, {
     label: 'Inquery Degree',
     to: '/inquery'
-  }]
+  } ]
 }]
 </script>
 
