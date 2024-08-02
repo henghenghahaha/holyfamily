@@ -68,7 +68,7 @@ async function onSubmit(event: FormSubmitEvent<Schema>) {
            src="/combine.png"
            alt="Holy Family College">
       <UForm class="overlay" :schema="schema" :state="state" @submit="onSubmit">
-        <h1>Check your degree here</h1>
+        <h1>Check Your Degree Here</h1>
         <UFormGroup label="Name" name="name"
                     :ui="{label: {
             wrapper: 'flex content-center items-center justify-between',
@@ -117,7 +117,7 @@ async function onSubmit(event: FormSubmitEvent<Schema>) {
 .overlay {
   position: relative;
   top: -400px;
-  left: 0px;
+  left: 0;
   right: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0);
@@ -126,6 +126,7 @@ async function onSubmit(event: FormSubmitEvent<Schema>) {
   justify-content: right;
   align-items: center;
   color: #000000;
+  margin-right: -800px;
 }
 
 .overlay h1 {
