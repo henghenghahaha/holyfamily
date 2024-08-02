@@ -31,7 +31,7 @@ const links = [{
         <template #right >
           <form>
             <UFormGroup
-              label="Contact us via the email below👇"
+              label="Contact us via the email below"
               :ui="{
               container: 'mt-3',
               label: {
@@ -45,7 +45,7 @@ const links = [{
             <div style="height: 20px">
             </div>
             <UFormGroup
-              label="Our Location👇"
+              label="Our Location"
               :ui="{
               container: 'mt-3',
               label: {
