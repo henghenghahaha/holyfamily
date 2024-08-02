@@ -92,7 +92,7 @@
     </div>
   </div>
   <div class="div2">
-    <h1>Postgraduate major</h1>
+    <h1>Graduate major</h1>
 
     <div class="major-container">
       <div class="major-category">
