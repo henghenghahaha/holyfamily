@@ -117,13 +117,13 @@ async function onSubmit(event: FormSubmitEvent<Schema>) {
 .overlay {
   position: relative;
   top: -400px;
-  left: -400px;
+  left: 0px;
   right: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0);
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: right;
   align-items: center;
   color: #000000;
 }

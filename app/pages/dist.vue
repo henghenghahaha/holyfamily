@@ -101,22 +101,43 @@ const onimgscoreChange = (event: Event) => {
 };
 
 async function submitchange() {
-  await supabase.from('holyfamily').update({
-    "datebirth" : statedata.datebirth,
-    "dateofattendence" : statedata.dateofattendence,
-    "dateofgraduation" : statedata.dateofgraduation,
-    "degree" : statedata.degree,
-    "gender" : statedata.gender,
-    "gpa" : statedata.gpa,
-    "id" : statedata.id,
-    "imgperson" : statedata.imgperson,
-    "imgscore" : statedata.imgscore,
-    "major" : statedata.major,
-    "name" : statedata.name,
-    "nationality" : statedata.nationality,
-    "registrationnumber" : statedata.registrationnumber,
-    "totalcredits" : statedata.totalcredits,
-  }).eq("id",statedata.id)
+  const { data } = await supabase.from('holyfamily').select().eq("id",statedata.id)
+  if (data.length == 0) {
+    await supabase.from('holyfamily').insert({
+      "datebirth" : statedata.datebirth,
+      "dateofattendence" : statedata.dateofattendence,
+      "dateofgraduation" : statedata.dateofgraduation,
+      "degree" : statedata.degree,
+      "gender" : statedata.gender,
+      "gpa" : statedata.gpa,
+      "id" : statedata.id,
+      "imgperson" : statedata.imgperson,
+      "imgscore" : statedata.imgscore,
+      "major" : statedata.major,
+      "name" : statedata.name,
+      "nationality" : statedata.nationality,
+      "registrationnumber" : statedata.registrationnumber,
+      "totalcredits" : statedata.totalcredits,
+    }).eq("id",statedata.id)
+  }else{
+    await supabase.from('holyfamily').update({
+      "datebirth" : statedata.datebirth,
+      "dateofattendence" : statedata.dateofattendence,
+      "dateofgraduation" : statedata.dateofgraduation,
+      "degree" : statedata.degree,
+      "gender" : statedata.gender,
+      "gpa" : statedata.gpa,
+      "id" : statedata.id,
+      "imgperson" : statedata.imgperson,
+      "imgscore" : statedata.imgscore,
+      "major" : statedata.major,
+      "name" : statedata.name,
+      "nationality" : statedata.nationality,
+      "registrationnumber" : statedata.registrationnumber,
+      "totalcredits" : statedata.totalcredits,
+    }).eq("id",statedata.id)
+  }
+
   clearstate()
   toast.add({ title: 'Submit Success!!'})
 }
