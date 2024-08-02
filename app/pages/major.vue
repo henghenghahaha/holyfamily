@@ -50,6 +50,11 @@ const posts = [
   <img class="imageplaceholder" src="/Library_i.png" >
   <UContainer>
     <UPageBody>
+      <p class="college-info">
+        Holy Family College has several colleges covering more than 60 fields of study with a full range of Bachelor's, Master's and Doctoral degree programmes for students.
+
+        For example, the College of Business and Management, the College of Education and Leadership, the College of Arts and Sciences, and the College of Nursing and Health Sciences, etc.
+      </p>
       <UBlogList>
         <UBlogPost
           v-for="(post, index) in posts"
@@ -66,3 +71,34 @@ const posts = [
     </UPageBody>
   </UContainer>
 </template>
+
+<style>
+.college-info {
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  max-width: 1300px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-left: 4px solid #4a90e2;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: justify;
+  transition: all 0.3s ease;
+}
+
+.college-info:hover {
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 600px) {
+  .college-info {
+    font-size: 14px;
+    padding: 15px;
+    margin: 15px;
+  }
+}
+</style>
