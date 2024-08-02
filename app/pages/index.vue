@@ -68,7 +68,7 @@ const page = {
       </div>
       <div class="w-full sm:w-1/3 px-2 mb-4">
         <img
-          src="/campus3.jpg"
+          src="/campus3.png"
           class="w-full h-auto rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"
         />
       </div>
