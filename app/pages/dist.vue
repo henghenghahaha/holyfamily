@@ -194,6 +194,10 @@ async function submitchange() {
             <UInput v-model="statedata.datebirth" />
           </UFormGroup>
           <UFormGroup class="field">
+            <p>Gender</p>
+            <UInput v-model="statedata.gender" />
+          </UFormGroup>
+          <UFormGroup class="field">
             <p>Nationality</p>
             <UInput v-model="statedata.nationality" />
           </UFormGroup>
