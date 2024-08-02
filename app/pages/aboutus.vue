@@ -6,10 +6,9 @@
   <div class="about-us-container">
 
     <div class="content-section">
-      <h1>About Holy Family College</h1>
 
       <div class="text-block">
-        <h2>Our History</h2>
+        <h1>Our History</h1>
         <p>Holy Family College traces its history to 1885 when the Franciscan Sisters of Christian Charity established Holy Family Academy and Normal School to prepare young women who entered the religious community for teaching. They founded Holy Family College in 1935. The college began admitting lay women in 1957 and became coeducational in 1969. 
 <br><br>
           The college was located in a wing of Holy Family Convent for 25 years. In the late 1950s, a capital campaign was launched to build a new college building on 36 acres adjacent to Holy Family Convent. The new Holy Family College building opened in 1960. In 1972 the college became separately incorporated from the Franciscan order, and was renamed Silver Lake College of the Holy Family.
