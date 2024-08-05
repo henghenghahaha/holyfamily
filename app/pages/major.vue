@@ -20,7 +20,7 @@ const programs = [
       }
   }, {"id":3,
 
-      "title": 'Engineer',
+      "title": 'ENGINEER',
       "description": "Welcome to the Theater Program at Holy Family College, where creativity, passion, and talent come together to create transformative theatrical experiences. Our program is designed to provide students with a comprehensive education in the performing arts, combining rigorous academic coursework with extensive hands-on experience.",
       "image": {
         "src": "/Engineer.png"
@@ -62,7 +62,7 @@ const programs = [
     }
   },{
     "id":9,
-    "title": 'Foreign Languages',
+    "title": 'FOREIGN LANGUAGES',
     "description": "The Communication program at Holy Family College is designed to equip students with the skills and knowledge necessary to excel in a rapidly evolving media landscape. Our program emphasizes both the theoretical foundations and practical applications of communication, preparing graduates for diverse careers in media, public relations, corporate communication, journalism, and more.",
     "image": {
       "src": "/ForeignLanguages.jpg",
@@ -83,7 +83,7 @@ const programs = [
     }
   },{
     "id":12,
-    "title": 'Internation Relationship',
+    "title": 'INTERNATION RELATIONSHIP',
     "description": "The Communication program at Holy Family College is designed to equip students with the skills and knowledge necessary to excel in a rapidly evolving media landscape. Our program emphasizes both the theoretical foundations and practical applications of communication, preparing graduates for diverse careers in media, public relations, corporate communication, journalism, and more.",
     "image": {
       "src": "/InternationalRelations.jpg",
@@ -243,7 +243,7 @@ const programs = [
   background-color: #ffffff;
   position: relative;
   overflow: hidden;
-  border-bottom: 5px solid #3498db;
+  border-top: 5px solid #3498db;
   margin-top: -100px;
 }
 
