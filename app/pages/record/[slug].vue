@@ -55,7 +55,7 @@ const record = JSON.parse(recorddeatil.value)
         </tr>
         <tr>
           <th>Date of Attendance & Date of Graduation</th>
-          <td>{{ record.dateofattendence }} - {{ record.dateofgraduation }}</td>
+          <td>{{ record.dateofattendence }} ---- {{ record.dateofgraduation }}</td>
         </tr>
       </table>
     </div>
