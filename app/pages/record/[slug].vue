@@ -4,6 +4,9 @@ import {useRouter} from 'vue-router'
 const router = useRouter()
 const recorddeatil = useState('recorddeatil')
 const record = JSON.parse(recorddeatil.value)
+function replaceHyphenWithSlash(input: string): string {
+  return input.replace(/-/g, '/');
+}
 
 </script>
 
@@ -14,7 +17,7 @@ const record = JSON.parse(recorddeatil.value)
       <img :src="record.imgperson" alt="Student Photo">
       <table>
         <tr>
-          <th>Student Name</th>
+          <th>Name</th>
           <td>{{record.name}}</td>
         </tr>
         <tr>
@@ -23,14 +26,14 @@ const record = JSON.parse(recorddeatil.value)
         </tr>
         <tr>
           <th>Date of Birth</th>
-          <td>{{record.datebirth}}</td>
+          <td>{{replaceHyphenWithSlash(record.datebirth)}}</td>
         </tr>
         <tr>
           <th>Nationality</th>
           <td>{{ record.nationality }}</td>
         </tr>
         <tr>
-          <th>Reg Number</th>
+          <th>Registration NO.</th>
           <td>{{ record.registrationnumber }}</td>
         </tr>
         <tr>
@@ -38,7 +41,7 @@ const record = JSON.parse(recorddeatil.value)
           <td>{{ record.id }}</td>
         </tr>
         <tr>
-          <th>Major of Study</th>
+          <th>Major</th>
           <td>{{ record.major }}</td>
         </tr>
         <tr>
@@ -50,12 +53,12 @@ const record = JSON.parse(recorddeatil.value)
           <td>{{ record.totalcredits }}</td>
         </tr>
         <tr>
-          <th>The Grade Point Average (The GPA)</th>
+          <th>Grade Point Average (GPA)</th>
           <td>{{ record.gpa }}</td>
         </tr>
         <tr>
           <th>Date of Attendance & Date of Graduation</th>
-          <td>{{ record.dateofattendence }} ---- {{ record.dateofgraduation }}</td>
+          <td>{{ replaceHyphenWithSlash(record.dateofattendence) }} -- {{ replaceHyphenWithSlash(record.dateofgraduation) }}</td>
         </tr>
       </table>
     </div>
